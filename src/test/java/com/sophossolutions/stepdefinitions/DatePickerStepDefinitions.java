@@ -1,22 +1,15 @@
 package com.sophossolutions.stepdefinitions;
 
-import com.sophossolutions.exceptions.GeneralException;
-import com.sophossolutions.questions.date_pickers.FechaTimeTexbox;
 import com.sophossolutions.tasks.date_pickers.NavegarDatePicker;
 import com.sophossolutions.tasks.date_pickers.SeleccionarFecha;
 import com.sophossolutions.tasks.date_pickers.SeleccionarFechaTime;
 import com.sophossolutions.tasks.date_pickers.ValidarFecha;
-import com.sophossolutions.util.ErrorMessage;
+import com.sophossolutions.tasks.date_pickers.ValidarFechaTime;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
-import static org.hamcrest.core.IsEqual.equalTo;
-import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
-
 public class DatePickerStepDefinitions {
-    private Integer hora;
-    private String horaNormal;
 
 @When("^se desplaza a la pagina de date picker$")
 public void seDesplazaALaPaginaDeDatePicker() {
@@ -39,18 +32,9 @@ public void seleccionaLaFechaYHoraEnDateAndTime(DataTable table) {
     theActorInTheSpotlight().attemptsTo(SeleccionarFechaTime.seleccionarFechaTime(table));
 }
 @Then("^visualiza la fecha (.*) y hora seleccionada (.*)$")
-public void visualizaLaFechaYHoraSeleccionada(String fecha,String horamilitar) 
-{  hora=Integer.parseInt(horamilitar.substring(0,2));
-    if (hora>12) {
-        horaNormal=fecha+" "+Integer.toString(hora-12)+horamilitar.substring(2,5)+" PM";
-     
-    } else {
-        horaNormal=fecha+" "+Integer.toString(hora)+horamilitar.substring(2,5)+" AM";
-       
-    }     
-    theActorInTheSpotlight().should(seeThat(FechaTimeTexbox.validarFechaTime(),
-    equalTo(horaNormal)).orComplainWith(GeneralException.class,
-    ErrorMessage.MSG_ERROR));
+public void visualizaLaFechaYHoraSeleccionada(String fecha,String horaMilitar){ 
+
+theActorInTheSpotlight().attemptsTo(ValidarFechaTime.validarFechaTime(fecha,horaMilitar));   
 }
-    
+
 }

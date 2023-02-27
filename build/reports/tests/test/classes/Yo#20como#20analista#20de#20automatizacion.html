@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2m37.22s</div>
+<div class="counter">2m35.44s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">90%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,52 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard error</a>
+<a href="#tab1">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="Seleccionar fecha en &quot;Select Date&quot;"></a>
-<h3 class="failures">Seleccionar fecha en &quot;Select Date&quot;</h3>
-<span class="code">
-<pre>java.lang.AssertionError: El valor obtenido no es igual al esperado. - 
-Expected: &quot;agosto/24/1991&quot;
-     but: was &quot;August/24/1991&quot;
-	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:38)
-	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:32)
-	at net.serenitybdd.screenplay.Actor.should(Actor.java:390)
-	at com.sophossolutions.tasks.date_pickers.ValidarFecha.performAs(ValidarFecha.java:22)
-	at com.sophossolutions.tasks.date_pickers.ValidarFecha$ByteBuddy$kPbVQZm1.performAs$accessor$eejO5Vgr(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:518)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:498)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:472)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:211)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:198)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:86)
-	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at com.sophossolutions.tasks.date_pickers.ValidarFecha$ByteBuddy$kPbVQZm1.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:291)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:270)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:210)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:217)
-	at com.sophossolutions.stepdefinitions.DatePickerStepDefinitions.visualizaLaFechaSeleccionada(DatePickerStepDefinitions.java:34)
-	at ✽.visualiza la fecha seleccionada del archivo data.csv(file:///C:/Users/julian.garay/WorkSpaceVSC/EjerciciosPracticos/src/test/resources/features/date_picker.feature:10)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -118,140 +79,140 @@ Expected: &quot;agosto/24/1991&quot;
 </thead>
 <tr>
 <td class="success">Agregar un nuevo registro a una tabla #1</td>
-<td class="success">15.704s</td>
+<td class="success">14.917s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Agregar un nuevo registro a una tabla #2</td>
-<td class="success">14.387s</td>
+<td class="success">15.155s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Click On button click, prompt box will appear</td>
-<td class="success">11.729s</td>
+<td class="success">12.175s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Eliminar un registro a una tabla #1</td>
-<td class="success">13.185s</td>
+<td class="success">13.465s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Eliminar un registro a una tabla #2</td>
-<td class="success">13.319s</td>
+<td class="success">13.525s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Eliminar un registro a una tabla #3</td>
-<td class="success">13.754s</td>
+<td class="success">13.436s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Interactuar con la alerta &quot;alert will appear after 5 seconds&quot;</td>
-<td class="success">15.218s</td>
+<td class="success">14.846s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Interactuar con la alerta &quot;confirm box will appear&quot;</td>
-<td class="success">9.931s</td>
+<td class="success">10.910s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Interactuar con la alerta &quot;see alert&quot;</td>
-<td class="success">14.809s</td>
+<td class="success">14.356s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Seleccionar fecha en &quot;Date And Time&quot;</td>
-<td class="success">14.447s</td>
+<td class="success">14.637s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">Seleccionar fecha en &quot;Select Date&quot;</td>
-<td class="failures">20.738s</td>
-<td class="failures">failed</td>
+<td class="success">Seleccionar fecha en &quot;Select Date&quot;</td>
+<td class="success">18.017s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 14410
+<pre>Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 9926
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1677537117.285][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-feb 27, 2023 5:31:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+[1677538612.776][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb 27, 2023 5:56:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
-Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 48394
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 12016
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1677537129.057][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-feb 27, 2023 5:32:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+[1677538624.146][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb 27, 2023 5:57:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
-Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 16602
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 8520
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1677537144.125][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-feb 27, 2023 5:32:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+[1677538638.942][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb 27, 2023 5:57:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
-Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 40495
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 13021
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1677537154.030][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-feb 27, 2023 5:32:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+[1677538649.875][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb 27, 2023 5:57:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
-Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 10789
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 9348
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1677537180.661][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-feb 27, 2023 5:33:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+[1677538675.680][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb 27, 2023 5:57:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
-Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 39599
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 36591
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1677537195.226][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-feb 27, 2023 5:33:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+[1677538688.597][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb 27, 2023 5:58:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
-Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 27185
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 30508
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1677537209.911][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-feb 27, 2023 5:33:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+[1677538703.496][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb 27, 2023 5:58:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
-Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 43201
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 1340
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1677537223.088][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-feb 27, 2023 5:33:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+[1677538716.936][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb 27, 2023 5:58:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
-Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 3446
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 27042
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1677537236.389][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-feb 27, 2023 5:33:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+[1677538730.392][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb 27, 2023 5:58:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
-Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 15711
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 23630
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1677537250.146][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-feb 27, 2023 5:34:10 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+[1677538743.865][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb 27, 2023 5:59:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
-Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 42123
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 10839
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1677537265.883][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-feb 27, 2023 5:34:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+[1677538758.793][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb 27, 2023 5:59:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
 </pre>
 </span>
@@ -264,7 +225,7 @@ ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.6</a> at 27/02/2023 05:34:39 PM</p>
+<a href="http://www.gradle.org">Gradle 7.6</a> at 27/02/2023 05:59:33 PM</p>
 </div>
 </div>
 </body>

@@ -1,18 +1,15 @@
 package com.sophossolutions.stepdefinitions;
 import net.serenitybdd.screenplay.actions.Open;
-import com.sophossolutions.exceptions.GeneralException;
-import com.sophossolutions.questions.web_tables.ExistenciaRegistro;
 import com.sophossolutions.tasks.web_tables.AgregarRegistro;
 import com.sophossolutions.tasks.web_tables.EliminarRegistro;
 import com.sophossolutions.tasks.web_tables.NavegarWebTables;
+import com.sophossolutions.tasks.web_tables.ValidarRegistroCreado;
+import com.sophossolutions.tasks.web_tables.ValidarRegistroEliminado;
 import com.sophossolutions.userinterfaces.HomePage;
-import com.sophossolutions.util.ErrorMessage;
 import io.cucumber.java.en.*;
 import io.cucumber.datatable.DataTable;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
-import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
-import static org.hamcrest.core.IsEqual.equalTo;
 
 public class WebTablesStepDefinitions {
 
@@ -38,15 +35,11 @@ public class WebTablesStepDefinitions {
         theActorInTheSpotlight().attemptsTo(AgregarRegistro.agregarRegistro(table));
     }
     @Then("^visualiza que se elimino el registro con primer nombre (.*)$")
-    public void visualizaQueSeEliminaraElRegistroConNombre(String firtsName) {
-        theActorInTheSpotlight().should(seeThat(ExistenciaRegistro.validarExistenciaRegistro(firtsName),
-         equalTo(false)).orComplainWith(GeneralException.class,
-        ErrorMessage.MSG_ERROR));
+    public void visualizaQueSeEliminaraElRegistroConNombre(String firtsName ) {
+        theActorInTheSpotlight().attemptsTo(ValidarRegistroEliminado.validarRegistroEliminado(firtsName));
     }
     @Then("^visualiza el nuevo registro creado con primer nombre (.*)$")
     public void visualizaElNuevoRegistroCreado(String firtsName) {
-        theActorInTheSpotlight().should(seeThat(ExistenciaRegistro.validarExistenciaRegistro(firtsName),
-         equalTo(true)).orComplainWith(GeneralException.class,
-        ErrorMessage.MSG_ERROR));
+        theActorInTheSpotlight().attemptsTo(ValidarRegistroCreado.validarRegistroCreado(firtsName));
     }
 }
