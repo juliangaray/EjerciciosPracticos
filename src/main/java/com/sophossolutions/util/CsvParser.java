@@ -23,26 +23,31 @@ public class CsvParser {
     private static List<List<String>> inputs;
     private static List<String> inputLine;
     
-public static List<List<String>> readCSVFile(String filename) throws IOException {
-    file = new File(filename);
-    fileContents = FileUtils.readFileToString(file, "UTF-8");
-    reader = new StringReader(fileContents);
-    format = CSVFormat.EXCEL;
-    parser = new CSVParser(reader, format);
-
-    records = parser.getRecords();
-    inputs = new ArrayList<List<String>>();
-
-    for (CSVRecord record : records) {
-        inputLine = new ArrayList<String>();
-        for (index = 0; index < record.size(); index++) {
-            value = record.get(index);
-            inputLine.add(value);
-        }
-        inputs.add(inputLine);
-    }
-    parser.close();
-    return inputs;
-}
+public static List<List<String>> readCSVFile(String filename){
     
+
+    try {
+        file = new File(filename);
+        fileContents = FileUtils.readFileToString(file, "UTF-8");
+        reader = new StringReader(fileContents);
+        format = CSVFormat.EXCEL;
+        parser = new CSVParser(reader, format);
+    
+        records = parser.getRecords();
+        inputs = new ArrayList<List<String>>();
+    
+        for (CSVRecord record : records) {
+            inputLine = new ArrayList<String>();
+            for (index = 0; index < record.size(); index++) {
+                value = record.get(index);
+                inputLine.add(value);
+            }
+            inputs.add(inputLine);
+        }
+        parser.close();        
+    } catch (IOException e) {
+         e.printStackTrace();
+    }  
+    return inputs;
+}    
 }
