@@ -8,9 +8,6 @@ import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 
 public class ValidarTextName implements Question<String>{
 
-
-
-
 @Override
 public String answeredBy(Actor actor) {
  

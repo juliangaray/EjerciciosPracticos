@@ -11,7 +11,7 @@ import net.serenitybdd.screenplay.actions.SendKeys;
 
 public class SeleccionarFecha implements Task {
 
- private final String year, month,day;
+private final String year, month,day;
 
     public SeleccionarFecha(String year, String month,String day) {
     this.year = year;

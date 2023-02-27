@@ -3,7 +3,6 @@ package com.sophossolutions.questions;
 import java.time.Month;
 import java.time.format.TextStyle;
 import java.util.Locale;
-
 import com.sophossolutions.userinterfaces.DatePicker;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;

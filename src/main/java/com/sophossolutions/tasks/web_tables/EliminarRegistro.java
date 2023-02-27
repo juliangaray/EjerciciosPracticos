@@ -8,7 +8,7 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Scroll;
 
 public class EliminarRegistro implements Task{
-    String posicion;
+    private String posicion;
 
     public EliminarRegistro(String posicion) {
     this.posicion = posicion;

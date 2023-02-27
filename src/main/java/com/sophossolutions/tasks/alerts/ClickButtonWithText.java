@@ -13,13 +13,12 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.alertIsPresent;
 
 public class ClickButtonWithText implements Task{
 
-    String button, name; 
+    private String button, name; 
 
     public ClickButtonWithText(String button, String name) {
         this.button = button;
         this.name = name;
     }
-
 
     @Override
     public <T extends Actor> void performAs(T actor) {

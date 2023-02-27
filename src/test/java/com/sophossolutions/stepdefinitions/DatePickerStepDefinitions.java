@@ -18,7 +18,10 @@ import static org.hamcrest.core.IsEqual.equalTo;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 
 public class DatePickerStepDefinitions {
-String horaNormal;
+private String horaNormal,fechaArchivo;
+private List<List<String>> datos;
+private Integer hora;
+
 @When("^se desplaza a la pagina de date picker$")
 public void seDesplazaALaPaginaDeDatePicker() {
     theActorInTheSpotlight().wasAbleTo(NavegarDatePicker.navegar());
@@ -26,20 +29,20 @@ public void seDesplazaALaPaginaDeDatePicker() {
 @When("^selecciona la fecha en Select Date del archivo (.*)$")
 public void seleccionaLaFechaEnSelectDate(String archivo) throws IOException {
    
-        List<List<String>> datos = CsvParser.readCSVFile(
+        datos = CsvParser.readCSVFile(
         "src/test/resources/files/"+archivo.toString()+"");
         for (List<String> row : datos){
         theActorInTheSpotlight().wasAbleTo(
-            SeleccionarFecha.seleccionarFecha(row.get(0), row.get(1),row.get(2))       
+        SeleccionarFecha.seleccionarFecha(row.get(0), row.get(1),row.get(2))       
       );
 }
 }
 @Then("^visualiza la fecha seleccionada del archivo (.*)$")
 public void visualizaLaFechaSeleccionada(String archivo) throws IOException {
-    List<List<String>> datos = CsvParser.readCSVFile(
+        datos = CsvParser.readCSVFile(
         "src/test/resources/files/"+archivo.toString()+"");
         for (List<String> row : datos){
-       String fechaArchivo = row.get(1)+"/"+row.get(2)+"/"+row.get(0);     
+        fechaArchivo = row.get(1)+"/"+row.get(2)+"/"+row.get(0);     
         
     theActorInTheSpotlight().should(seeThat(ValidarFecha.validarFecha(),
     equalTo(fechaArchivo)).orComplainWith(GeneralException.class,
@@ -52,7 +55,7 @@ public void seleccionaLaFechaYHoraEnDateAndTime(DataTable table) {
 }
 @Then("^visualiza la fecha (.*) y hora seleccionada (.*)$")
 public void visualizaLaFechaYHoraSeleccionada(String fecha,String horamilitar) 
-{  Integer hora=Integer.parseInt(horamilitar.substring(0,2));
+{  hora=Integer.parseInt(horamilitar.substring(0,2));
     if (hora>12) {
         horaNormal=fecha+" "+Integer.toString(hora-12)+horamilitar.substring(2,5)+" PM";
      

@@ -12,7 +12,6 @@ public class ValidarFechaTime implements Question<String>{
         return BrowseTheWeb.as(actor).find(DatePicker.INPUT_DATE_TIME).getValue();
     }
 
-
     public static ValidarFechaTime validarFechaTime() {
         return new ValidarFechaTime();
     }     

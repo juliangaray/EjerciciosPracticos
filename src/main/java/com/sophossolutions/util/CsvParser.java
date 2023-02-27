@@ -12,21 +12,31 @@ import org.apache.commons.csv.CSVRecord;
 import org.apache.commons.io.FileUtils;
 
 public class CsvParser {
+
+    private static File file;
+    private static int index;
+    private static String fileContents, value;
+    private static Reader reader;
+    private static CSVFormat format;
+    private static CSVParser parser;
+    private static List<CSVRecord> records;
+    private static List<List<String>> inputs;
+    private static List<String> inputLine;
     
 public static List<List<String>> readCSVFile(String filename) throws IOException {
-    File file = new File(filename);
-    String fileContents = FileUtils.readFileToString(file, "UTF-8");
-    Reader reader = new StringReader(fileContents);
-    CSVFormat format = CSVFormat.EXCEL;
-    CSVParser parser = new CSVParser(reader, format);
+    file = new File(filename);
+    fileContents = FileUtils.readFileToString(file, "UTF-8");
+    reader = new StringReader(fileContents);
+    format = CSVFormat.EXCEL;
+    parser = new CSVParser(reader, format);
 
-    List<CSVRecord> records = parser.getRecords();
-    List<List<String>> inputs = new ArrayList<List<String>>();
+    records = parser.getRecords();
+    inputs = new ArrayList<List<String>>();
 
     for (CSVRecord record : records) {
-        List<String> inputLine = new ArrayList<String>();
-        for (int index = 0; index < record.size(); index++) {
-            String value = record.get(index);
+        inputLine = new ArrayList<String>();
+        for (index = 0; index < record.size(); index++) {
+            value = record.get(index);
             inputLine.add(value);
         }
         inputs.add(inputLine);

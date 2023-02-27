@@ -11,12 +11,11 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.alertIsPresent;
 
 public class ClickButton implements Task{
 
-    String button;
+    private String button;
 
     public ClickButton(String button) {
         this.button = button;
     }
-
 
     @Override
     public <T extends Actor> void performAs(T actor) {
