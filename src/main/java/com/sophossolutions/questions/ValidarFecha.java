@@ -58,7 +58,7 @@ public class ValidarFecha implements Question<String>{
                  break;
                  
             case "12":
-                 fechaDate="Diciembre"+fechaTexto.substring(2);
+                 fechaDate="December"+fechaTexto.substring(2);
                  break;       
         } 
          return fechaDate;   
