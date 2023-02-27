@@ -1,4 +1,4 @@
-package com.sophossolutions.questions;
+package com.sophossolutions.questions.web_tables;
 
 import com.sophossolutions.userinterfaces.WebTables;
 import net.serenitybdd.screenplay.Actor;

@@ -1,11 +1,11 @@
 package com.sophossolutions.stepdefinitions;
 
 import com.sophossolutions.exceptions.GeneralException;
-import com.sophossolutions.questions.FechaTimeTexbox;
-import com.sophossolutions.tasks.alerts.ValidarFecha;
+import com.sophossolutions.questions.date_pickers.FechaTimeTexbox;
 import com.sophossolutions.tasks.date_pickers.NavegarDatePicker;
 import com.sophossolutions.tasks.date_pickers.SeleccionarFecha;
 import com.sophossolutions.tasks.date_pickers.SeleccionarFechaTime;
+import com.sophossolutions.tasks.date_pickers.ValidarFecha;
 import com.sophossolutions.util.ErrorMessage;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Then;

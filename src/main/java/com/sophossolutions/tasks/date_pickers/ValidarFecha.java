@@ -1,8 +1,8 @@
-package com.sophossolutions.tasks.alerts;
+package com.sophossolutions.tasks.date_pickers;
 
 import com.sophossolutions.exceptions.GeneralException;
-import com.sophossolutions.questions.FechaArchivo;
-import com.sophossolutions.questions.FechaTexbox;
+import com.sophossolutions.questions.date_pickers.FechaArchivo;
+import com.sophossolutions.questions.date_pickers.FechaTexbox;
 import com.sophossolutions.util.ErrorMessage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;

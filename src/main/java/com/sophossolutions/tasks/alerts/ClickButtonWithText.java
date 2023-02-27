@@ -1,7 +1,6 @@
 package com.sophossolutions.tasks.alerts;
 import com.sophossolutions.userinterfaces.Alerts;
 import com.sophossolutions.userinterfaces.HomePage;
-
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;

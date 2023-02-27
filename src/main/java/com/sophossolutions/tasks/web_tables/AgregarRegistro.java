@@ -1,6 +1,5 @@
 package com.sophossolutions.tasks.web_tables;
 import java.util.Map;
-
 import com.sophossolutions.userinterfaces.HomePage;
 import com.sophossolutions.userinterfaces.WebTables;
 import net.serenitybdd.screenplay.Actor;
@@ -10,8 +9,6 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.Scroll;
 import io.cucumber.datatable.DataTable;
-
-
 
 public class AgregarRegistro implements Task {
     

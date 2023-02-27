@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Yo como analista de automatizacion" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-02-27T22:10:59" hostname="SSBOG5CG1081NY4" time="17.589">
+<testsuite name="Yo como analista de automatizacion" tests="11" skipped="0" failures="1" errors="0" timestamp="2023-02-27T22:31:52" hostname="SSBOG5CG1081NY4" time="166.171">
   <properties/>
-  <testcase name="Seleccionar fecha en &quot;Select Date&quot;" classname="Yo como analista de automatizacion" time="17.589">
+  <testcase name="Interactuar con la alerta &quot;see alert&quot;" classname="Yo como analista de automatizacion" time="14.809"/>
+  <testcase name="Interactuar con la alerta &quot;alert will appear after 5 seconds&quot;" classname="Yo como analista de automatizacion" time="15.218"/>
+  <testcase name="Interactuar con la alerta &quot;confirm box will appear&quot;" classname="Yo como analista de automatizacion" time="9.931"/>
+  <testcase name="Click On button click, prompt box will appear" classname="Yo como analista de automatizacion" time="11.729"/>
+  <testcase name="Seleccionar fecha en &quot;Select Date&quot;" classname="Yo como analista de automatizacion" time="20.738">
     <failure message="java.lang.AssertionError: El valor obtenido no es igual al esperado. - &#13;&#10;Expected: &quot;agosto/24/1991&quot;&#13;&#10;     but: was &quot;August/24/1991&quot;" type="java.lang.AssertionError">java.lang.AssertionError: El valor obtenido no es igual al esperado. - 
 Expected: &quot;agosto/24/1991&quot;
      but: was &quot;August/24/1991&quot;
 	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:38)
 	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:32)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:390)
-	at com.sophossolutions.tasks.alerts.ValidarFecha.performAs(ValidarFecha.java:25)
-	at com.sophossolutions.tasks.alerts.ValidarFecha$ByteBuddy$3FVjJa5U.performAs$accessor$bIxpveY3(Unknown Source)
+	at com.sophossolutions.tasks.date_pickers.ValidarFecha.performAs(ValidarFecha.java:22)
+	at com.sophossolutions.tasks.date_pickers.ValidarFecha$ByteBuddy$kPbVQZm1.performAs$accessor$eejO5Vgr(Unknown Source)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -21,7 +25,7 @@ Expected: &quot;agosto/24/1991&quot;
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:198)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:86)
 	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at com.sophossolutions.tasks.alerts.ValidarFecha$ByteBuddy$3FVjJa5U.performAs(Unknown Source)
+	at com.sophossolutions.tasks.date_pickers.ValidarFecha$ByteBuddy$kPbVQZm1.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:291)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:270)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:210)
@@ -30,13 +34,89 @@ Expected: &quot;agosto/24/1991&quot;
 	at ✽.visualiza la fecha seleccionada del archivo data.csv(file:///C:/Users/julian.garay/WorkSpaceVSC/EjerciciosPracticos/src/test/resources/features/date_picker.feature:10)
 </failure>
   </testcase>
+  <testcase name="Seleccionar fecha en &quot;Date And Time&quot;" classname="Yo como analista de automatizacion" time="14.447"/>
+  <testcase name="Eliminar un registro a una tabla #1" classname="Yo como analista de automatizacion" time="13.185"/>
+  <testcase name="Eliminar un registro a una tabla #2" classname="Yo como analista de automatizacion" time="13.319"/>
+  <testcase name="Eliminar un registro a una tabla #3" classname="Yo como analista de automatizacion" time="13.754"/>
+  <testcase name="Agregar un nuevo registro a una tabla #1" classname="Yo como analista de automatizacion" time="15.704"/>
+  <testcase name="Agregar un nuevo registro a una tabla #2" classname="Yo como analista de automatizacion" time="14.387"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 11848
+  <system-err><![CDATA[Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 14410
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1677535864.147][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-feb 27, 2023 5:11:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+[1677537117.285][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb 27, 2023 5:31:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 48394
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1677537129.057][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb 27, 2023 5:32:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 16602
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1677537144.125][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb 27, 2023 5:32:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 40495
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1677537154.030][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb 27, 2023 5:32:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 10789
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1677537180.661][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb 27, 2023 5:33:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 39599
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1677537195.226][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb 27, 2023 5:33:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 27185
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1677537209.911][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb 27, 2023 5:33:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 43201
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1677537223.088][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb 27, 2023 5:33:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 3446
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1677537236.389][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb 27, 2023 5:33:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 15711
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1677537250.146][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb 27, 2023 5:34:10 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 42123
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1677537265.883][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb 27, 2023 5:34:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
 ]]></system-err>
 </testsuite>

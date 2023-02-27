@@ -1,16 +1,12 @@
 package com.sophossolutions.stepdefinitions;
 
-import com.sophossolutions.exceptions.GeneralException;
-import com.sophossolutions.questions.TextNameAlerta;
 import com.sophossolutions.tasks.alerts.ClickButton;
 import com.sophossolutions.tasks.alerts.ClickButtonWithText;
 import com.sophossolutions.tasks.alerts.NavegarAlerts;
-import com.sophossolutions.util.ErrorMessage;
+import com.sophossolutions.tasks.alerts.VisualizarTexto;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
-import static org.hamcrest.core.IsEqual.equalTo;
-import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 
 public class AlertsStepDefinitions {
 
@@ -31,10 +27,6 @@ public void diligenciaNombreEnElTexbox(String button, String name) {
 
 @Then("^visualiza el texto (.*)$")
 public void visualizaElTexto(String name) {
-    theActorInTheSpotlight().should(seeThat(TextNameAlerta.validarTextName(),
-    equalTo(name)).orComplainWith(GeneralException.class,
-   ErrorMessage.MSG_ERROR));
+    theActorInTheSpotlight().attemptsTo(VisualizarTexto.visualizarTexto(name));
 }
-
-
 }

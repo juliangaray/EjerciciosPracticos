@@ -8,7 +8,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(features = "src/test/resources/features/alerts.feature",
         glue = "com.sophossolutions",
-        tags = "@21",
+        tags = "",
         snippets = SnippetType.CAMELCASE)
 
 public class Alerts {

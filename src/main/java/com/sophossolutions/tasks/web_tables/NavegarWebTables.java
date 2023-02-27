@@ -2,10 +2,10 @@ package com.sophossolutions.tasks.web_tables;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Scroll;
 import com.sophossolutions.userinterfaces.HomePage;
-import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class NavegarWebTables implements Task {
 
@@ -20,7 +20,7 @@ public class NavegarWebTables implements Task {
     }
 
     public static NavegarWebTables navegar() {
-        return instrumented(NavegarWebTables.class);
+        return Tasks.instrumented(NavegarWebTables.class);
     }
     
 }

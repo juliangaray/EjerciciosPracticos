@@ -2,7 +2,6 @@ package com.sophossolutions.tasks.date_pickers;
 import java.util.Map;
 import com.sophossolutions.userinterfaces.DatePicker;
 import com.sophossolutions.userinterfaces.HomePage;
-
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;

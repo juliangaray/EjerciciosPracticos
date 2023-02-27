@@ -1,4 +1,4 @@
-package com.sophossolutions.questions;
+package com.sophossolutions.questions.date_pickers;
 import com.sophossolutions.userinterfaces.DatePicker;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;

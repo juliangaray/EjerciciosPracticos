@@ -1,7 +1,7 @@
 package com.sophossolutions.stepdefinitions;
 import net.serenitybdd.screenplay.actions.Open;
 import com.sophossolutions.exceptions.GeneralException;
-import com.sophossolutions.questions.ExistenciaRegistro;
+import com.sophossolutions.questions.web_tables.ExistenciaRegistro;
 import com.sophossolutions.tasks.web_tables.AgregarRegistro;
 import com.sophossolutions.tasks.web_tables.EliminarRegistro;
 import com.sophossolutions.tasks.web_tables.NavegarWebTables;

@@ -2,10 +2,10 @@ package com.sophossolutions.tasks.date_pickers;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Scroll;
 import com.sophossolutions.userinterfaces.HomePage;
-import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class NavegarDatePicker implements Task{ 
     
@@ -21,6 +21,6 @@ public class NavegarDatePicker implements Task{
     }
 
     public static NavegarDatePicker navegar() {
-        return instrumented(NavegarDatePicker.class);
+        return Tasks.instrumented(NavegarDatePicker.class);
     }
 }
