@@ -8,7 +8,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 
-public class ValidarFecha implements Question<String>{   
+public class ValidarFechaTexbox implements Question<String>{   
     private String fechaTexto,monthName,fechaDate;
     private Month mMonth;
     private Locale locale;
@@ -20,11 +20,11 @@ public class ValidarFecha implements Question<String>{
         mMonth=Month.of(Integer.parseInt(fechaTexto.substring(0,2)));
         monthName=mMonth.getDisplayName(TextStyle.FULL,locale);  
         fechaDate=monthName+fechaTexto.substring(2);
-        return fechaDate;   
+        return fechaDate.toString();   
 
     }
-    public static ValidarFecha validarFecha() {
-        return new ValidarFecha();
+    public static ValidarFechaTexbox validarFechaTexbox() {
+        return new ValidarFechaTexbox();
     } 
     
 }

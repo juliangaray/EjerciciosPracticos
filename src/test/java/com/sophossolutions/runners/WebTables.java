@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(features = "src/test/resources/features/web_tables.feature",
         glue = "com.sophossolutions",
-        tags = "",
+        tags = "@21",
         snippets = SnippetType.CAMELCASE)
     
 public class WebTables {

@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Yo como analista de automatizacion" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-02-24T22:07:24" hostname="SSBOG5CG1081NY4" time="17.733">
+<testsuite name="Yo como analista de automatizacion" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-02-27T20:56:46" hostname="SSBOG5CG1081NY4" time="18.01">
   <properties/>
-  <testcase name="Seleccionar fecha en &quot;Select Date&quot;" classname="Yo como analista de automatizacion" time="17.733">
-    <failure message="java.lang.AssertionError: El valor obtenido no es igual al esperado. - &#13;&#10;Expected: &lt;com.sophossolutions.questions.ValidarFechaArchivo@7da1e005&gt;&#13;&#10;     but: was &quot;May/25/2023&quot;" type="java.lang.AssertionError">java.lang.AssertionError: El valor obtenido no es igual al esperado. - 
-Expected: &lt;com.sophossolutions.questions.ValidarFechaArchivo@7da1e005&gt;
-     but: was &quot;May/25/2023&quot;
+  <testcase name="Seleccionar fecha en &quot;Select Date&quot;" classname="Yo como analista de automatizacion" time="18.01">
+    <failure message="java.lang.AssertionError: El valor obtenido no es igual al esperado. - &#13;&#10;Expected: &lt;com.sophossolutions.questions.ValidarFechaTexbox@7da1e005&gt;&#13;&#10;     but: was &quot;August/24/1991&quot;" type="java.lang.AssertionError">java.lang.AssertionError: El valor obtenido no es igual al esperado. - 
+Expected: &lt;com.sophossolutions.questions.ValidarFechaTexbox@7da1e005&gt;
+     but: was &quot;August/24/1991&quot;
 	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:38)
 	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:32)
 	at net.serenitybdd.screenplay.Actor.should(Actor.java:390)
-	at com.sophossolutions.stepdefinitions.DatePickerStepDefinitions.visualizaLaFechaSeleccionada(DatePickerStepDefinitions.java:41)
-	at ✽.visualiza la fecha seleccionada del archivo data.csv(file:///C:/Users/julian.garay/Desktop/EjerciosPracticos/src/test/resources/features/date_picker.feature:10)
+	at com.sophossolutions.stepdefinitions.DatePickerStepDefinitions.visualizaLaFechaSeleccionada(DatePickerStepDefinitions.java:35)
+	at ✽.visualiza la fecha seleccionada del archivo data.csv(file:///C:/Users/julian.garay/WorkSpaceVSC/EjerciciosPracticos/src/test/resources/features/date_picker.feature:10)
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 19489
+  <system-err><![CDATA[Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 34904
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
+[1677531411.588][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+feb 27, 2023 3:56:51 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
 ]]></system-err>
 </testsuite>

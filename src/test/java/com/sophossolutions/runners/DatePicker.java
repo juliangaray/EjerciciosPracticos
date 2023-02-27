@@ -8,7 +8,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(features = "src/test/resources/features/date_picker.feature",
         glue = "com.sophossolutions",
-        tags = "",
+        tags = "@1",
         snippets = SnippetType.CAMELCASE)
 
 public class DatePicker {

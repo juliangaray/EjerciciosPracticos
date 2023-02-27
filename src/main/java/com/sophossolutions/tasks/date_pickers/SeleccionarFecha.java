@@ -12,7 +12,7 @@ import net.serenitybdd.screenplay.actions.SendKeys;
 
 public class SeleccionarFecha implements Task {
 
-private final String archivo;
+private String archivo;
 private List<List<String>> datos;
 
     public SeleccionarFecha(String archivo) {
