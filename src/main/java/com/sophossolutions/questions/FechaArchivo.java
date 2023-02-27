@@ -5,12 +5,12 @@ import com.sophossolutions.util.CsvParser;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 
-public class ValidarFechaArchivo implements Question<String>{
+public class FechaArchivo implements Question<String>{
 
 private String archivo, fechaArchivo;
 private List<List<String>> datos;
 
-    public ValidarFechaArchivo(String archivo) {
+    public FechaArchivo(String archivo) {
     this.archivo = archivo;
 }
 
@@ -26,7 +26,7 @@ private List<List<String>> datos;
 }    
 
 
-    public static ValidarFechaArchivo validarFechaArchivo(String archivo) {
-        return new ValidarFechaArchivo(archivo);
+    public static FechaArchivo validarFechaArchivo(String archivo) {
+        return new FechaArchivo(archivo);
 }    
 }

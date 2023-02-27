@@ -1,7 +1,7 @@
 package com.sophossolutions.stepdefinitions;
 
 import com.sophossolutions.exceptions.GeneralException;
-import com.sophossolutions.questions.ValidarTextName;
+import com.sophossolutions.questions.TextNameAlerta;
 import com.sophossolutions.tasks.alerts.ClickButton;
 import com.sophossolutions.tasks.alerts.ClickButtonWithText;
 import com.sophossolutions.tasks.alerts.NavegarAlerts;
@@ -31,7 +31,7 @@ public void diligenciaNombreEnElTexbox(String button, String name) {
 
 @Then("^visualiza el texto (.*)$")
 public void visualizaElTexto(String name) {
-    theActorInTheSpotlight().should(seeThat(ValidarTextName.validarTextName(),
+    theActorInTheSpotlight().should(seeThat(TextNameAlerta.validarTextName(),
     equalTo(name)).orComplainWith(GeneralException.class,
    ErrorMessage.MSG_ERROR));
 }

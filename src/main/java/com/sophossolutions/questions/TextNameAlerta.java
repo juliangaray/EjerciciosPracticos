@@ -6,7 +6,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 
-public class ValidarTextName implements Question<String>{
+public class TextNameAlerta implements Question<String>{
 
 @Override
 public String answeredBy(Actor actor) {
@@ -14,7 +14,7 @@ public String answeredBy(Actor actor) {
     return BrowseTheWeb.as(actor).find(Alerts.TEXT_NAME).getText();
 } 
 
-public static ValidarTextName validarTextName() {
-    return new ValidarTextName();
+public static TextNameAlerta validarTextName() {
+    return new TextNameAlerta();
        }
 }

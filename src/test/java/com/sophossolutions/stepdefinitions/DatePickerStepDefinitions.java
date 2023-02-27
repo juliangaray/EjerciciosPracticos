@@ -1,9 +1,8 @@
 package com.sophossolutions.stepdefinitions;
 
 import com.sophossolutions.exceptions.GeneralException;
-import com.sophossolutions.questions.ValidarFechaArchivo;
-import com.sophossolutions.questions.ValidarFechaTexbox;
-import com.sophossolutions.questions.ValidarFechaTime;
+import com.sophossolutions.questions.FechaTimeTexbox;
+import com.sophossolutions.tasks.alerts.ValidarFecha;
 import com.sophossolutions.tasks.date_pickers.NavegarDatePicker;
 import com.sophossolutions.tasks.date_pickers.SeleccionarFecha;
 import com.sophossolutions.tasks.date_pickers.SeleccionarFechaTime;
@@ -32,9 +31,7 @@ public void seleccionaLaFechaEnSelectDate(String archivo){
 @Then("^visualiza la fecha seleccionada del archivo (.*)$")
 public void visualizaLaFechaSeleccionada(String archivo){
 
-    theActorInTheSpotlight().should(seeThat(ValidarFechaArchivo.validarFechaArchivo(archivo),
-    equalTo(ValidarFechaTexbox.validarFechaTexbox())).orComplainWith(GeneralException.class,
-    ErrorMessage.MSG_ERROR));
+    theActorInTheSpotlight().attemptsTo(ValidarFecha.validarFecha(archivo));
 }
 
 @When("^selecciona la fecha y hora en Date And Time$")
@@ -51,7 +48,7 @@ public void visualizaLaFechaYHoraSeleccionada(String fecha,String horamilitar)
         horaNormal=fecha+" "+Integer.toString(hora)+horamilitar.substring(2,5)+" AM";
        
     }     
-    theActorInTheSpotlight().should(seeThat(ValidarFechaTime.validarFechaTime(),
+    theActorInTheSpotlight().should(seeThat(FechaTimeTexbox.validarFechaTime(),
     equalTo(horaNormal)).orComplainWith(GeneralException.class,
     ErrorMessage.MSG_ERROR));
 }

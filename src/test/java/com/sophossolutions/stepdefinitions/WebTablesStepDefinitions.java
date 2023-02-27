@@ -1,7 +1,7 @@
 package com.sophossolutions.stepdefinitions;
 import net.serenitybdd.screenplay.actions.Open;
 import com.sophossolutions.exceptions.GeneralException;
-import com.sophossolutions.questions.ValidarExistenciaRegistro;
+import com.sophossolutions.questions.ExistenciaRegistro;
 import com.sophossolutions.tasks.web_tables.AgregarRegistro;
 import com.sophossolutions.tasks.web_tables.EliminarRegistro;
 import com.sophossolutions.tasks.web_tables.NavegarWebTables;
@@ -39,13 +39,13 @@ public class WebTablesStepDefinitions {
     }
     @Then("^visualiza que se elimino el registro con primer nombre (.*)$")
     public void visualizaQueSeEliminaraElRegistroConNombre(String firtsName) {
-        theActorInTheSpotlight().should(seeThat(ValidarExistenciaRegistro.validarExistenciaRegistro(firtsName),
+        theActorInTheSpotlight().should(seeThat(ExistenciaRegistro.validarExistenciaRegistro(firtsName),
          equalTo(false)).orComplainWith(GeneralException.class,
         ErrorMessage.MSG_ERROR));
     }
     @Then("^visualiza el nuevo registro creado con primer nombre (.*)$")
     public void visualizaElNuevoRegistroCreado(String firtsName) {
-        theActorInTheSpotlight().should(seeThat(ValidarExistenciaRegistro.validarExistenciaRegistro(firtsName),
+        theActorInTheSpotlight().should(seeThat(ExistenciaRegistro.validarExistenciaRegistro(firtsName),
          equalTo(true)).orComplainWith(GeneralException.class,
         ErrorMessage.MSG_ERROR));
     }

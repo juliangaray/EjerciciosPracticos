@@ -4,7 +4,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 
-public class ValidarFechaTime implements Question<String>{
+public class FechaTimeTexbox implements Question<String>{
 
     @Override
     public String answeredBy(Actor actor) {
@@ -12,7 +12,7 @@ public class ValidarFechaTime implements Question<String>{
         return BrowseTheWeb.as(actor).find(DatePicker.INPUT_DATE_TIME).getValue();
     }
 
-    public static ValidarFechaTime validarFechaTime() {
-        return new ValidarFechaTime();
+    public static FechaTimeTexbox validarFechaTime() {
+        return new FechaTimeTexbox();
     }     
 }

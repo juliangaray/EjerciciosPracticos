@@ -5,11 +5,11 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 
-public class ValidarExistenciaRegistro implements Question<Boolean>{
+public class ExistenciaRegistro implements Question<Boolean>{
 
     private String firtsName;
 
-    public ValidarExistenciaRegistro(String firtsName) {
+    public ExistenciaRegistro(String firtsName) {
         this.firtsName = firtsName;
     }
 
@@ -19,7 +19,7 @@ public class ValidarExistenciaRegistro implements Question<Boolean>{
        return BrowseTheWeb.as(actor).find(WebTables.CELL_NAME.of(firtsName)).isPresent();
     }
     
-    public static ValidarExistenciaRegistro validarExistenciaRegistro(String firtsName) {
-        return new ValidarExistenciaRegistro(firtsName);
+    public static ExistenciaRegistro validarExistenciaRegistro(String firtsName) {
+        return new ExistenciaRegistro(firtsName);
     }   
 }
