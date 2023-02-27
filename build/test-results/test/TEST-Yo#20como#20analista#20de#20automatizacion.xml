@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Yo como analista de automatizacion" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-02-24T22:07:24" hostname="SSBOG5CG1081NY4" time="17.733">
+  <properties/>
+  <testcase name="Seleccionar fecha en &quot;Select Date&quot;" classname="Yo como analista de automatizacion" time="17.733">
+    <failure message="java.lang.AssertionError: El valor obtenido no es igual al esperado. - &#13;&#10;Expected: &lt;com.sophossolutions.questions.ValidarFechaArchivo@7da1e005&gt;&#13;&#10;     but: was &quot;May/25/2023&quot;" type="java.lang.AssertionError">java.lang.AssertionError: El valor obtenido no es igual al esperado. - 
+Expected: &lt;com.sophossolutions.questions.ValidarFechaArchivo@7da1e005&gt;
+     but: was &quot;May/25/2023&quot;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:38)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:32)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:390)
+	at com.sophossolutions.stepdefinitions.DatePickerStepDefinitions.visualizaLaFechaSeleccionada(DatePickerStepDefinitions.java:41)
+	at ✽.visualiza la fecha seleccionada del archivo data.csv(file:///C:/Users/julian.garay/Desktop/EjerciosPracticos/src/test/resources/features/date_picker.feature:10)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 19489
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+]]></system-err>
+</testsuite>
