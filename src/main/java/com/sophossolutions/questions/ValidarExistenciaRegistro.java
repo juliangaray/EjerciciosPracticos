@@ -16,11 +16,7 @@ public class ValidarExistenciaRegistro implements Question<Boolean>{
     @Override
     public Boolean answeredBy(Actor actor) {
 
-          if (BrowseTheWeb.as(actor).find(WebTables.CELL_NAME.of(firtsName)).isPresent()) {
-          return true; 
-        } else {
-          return false; 
-        }
+       return BrowseTheWeb.as(actor).find(WebTables.CELL_NAME.of(firtsName)).isPresent();
     }
     
     public static ValidarExistenciaRegistro validarExistenciaRegistro(String firtsName) {
