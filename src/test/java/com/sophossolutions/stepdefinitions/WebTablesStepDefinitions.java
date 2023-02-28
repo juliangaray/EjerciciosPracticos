@@ -3,8 +3,7 @@ import net.serenitybdd.screenplay.actions.Open;
 import com.sophossolutions.tasks.web_tables.AgregarRegistro;
 import com.sophossolutions.tasks.web_tables.EliminarRegistro;
 import com.sophossolutions.tasks.web_tables.NavegarWebTables;
-import com.sophossolutions.tasks.web_tables.ValidarRegistroCreado;
-import com.sophossolutions.tasks.web_tables.ValidarRegistroEliminado;
+import com.sophossolutions.tasks.web_tables.ValidarRegistro;
 import com.sophossolutions.userinterfaces.HomePage;
 import io.cucumber.java.en.*;
 import io.cucumber.datatable.DataTable;
@@ -34,12 +33,8 @@ public class WebTablesStepDefinitions {
     public void agregaUnNuevoRegistroALaTabla(DataTable table) {
         theActorInTheSpotlight().attemptsTo(AgregarRegistro.agregarRegistro(table));
     }
-    @Then("^visualiza que se elimino el registro con primer nombre (.*)$")
-    public void visualizaQueSeEliminaraElRegistroConNombre(String firtsName ) {
-        theActorInTheSpotlight().attemptsTo(ValidarRegistroEliminado.validarRegistroEliminado(firtsName));
-    }
-    @Then("^visualiza el nuevo registro creado con primer nombre (.*)$")
-    public void visualizaElNuevoRegistroCreado(String firtsName) {
-        theActorInTheSpotlight().attemptsTo(ValidarRegistroCreado.validarRegistroCreado(firtsName));
+    @Then("^confirma el registro (.*) con primer nombre (.*)$")
+    public void confirmaElRegistroConPrimerNombre(String status, String firtsName ) {
+        theActorInTheSpotlight().attemptsTo(ValidarRegistro.validarRegistro(status,firtsName));
     }
 }

@@ -9,23 +9,32 @@ import net.serenitybdd.screenplay.Tasks;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static org.hamcrest.core.IsEqual.equalTo;
 
-public class ValidarRegistroEliminado implements Task{
+public class ValidarRegistro implements Task{
 
-    private String firtsName;
+    private String firtsName, status;
 
-    public ValidarRegistroEliminado(String firtsName) {
+    public ValidarRegistro(String status, String firtsName) {
         this.firtsName = firtsName;
+        this.status = status;
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
+        if(status=="creado"){
+            actor.should(seeThat(ExistenciaRegistro.validarExistenciaRegistro(firtsName),
+            equalTo(true)).orComplainWith(GeneralException.class,
+            ErrorMessage.MSG_ERROR));
+            }
+            else{
             actor.should(seeThat(ExistenciaRegistro.validarExistenciaRegistro(firtsName),
             equalTo(false)).orComplainWith(GeneralException.class,
             ErrorMessage.MSG_ERROR));
+
+            }
     } 
 
-    public static ValidarRegistroEliminado validarRegistroEliminado(String firtsName) {
-        return Tasks.instrumented(ValidarRegistroEliminado.class,firtsName);
+    public static ValidarRegistro validarRegistro(String status, String firtsName) {
+        return Tasks.instrumented(ValidarRegistro.class,firtsName,status);
     }
        
 }

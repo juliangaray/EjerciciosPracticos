@@ -7,7 +7,7 @@ Feature: Yo como analista de automatizacion
     Given Julian ingresa a la Home Page
     When se desplaza a la pagina de web tables 
     And elimina el registro de la tabla posicion <posicion>
-    Then visualiza que se elimino el registro con primer nombre <firstName>
+    Then confirma el registro eliminado con primer nombre <firstName>
 
    Examples:
     | firstName  |posicion|
@@ -26,7 +26,7 @@ Feature: Yo como analista de automatizacion
     | age      | <age>      |
     | salary   | <salary>   |
     |Department|<Department>|
-    And visualiza el nuevo registro creado con primer nombre <firstName>
+    Then confirma el registro creado con primer nombre <firstName>
   
     Examples:
     | firstName | lastName | email                           | age | salary |Department|
