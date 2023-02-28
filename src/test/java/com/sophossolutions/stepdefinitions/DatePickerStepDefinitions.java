@@ -15,15 +15,14 @@ public class DatePickerStepDefinitions {
 public void seDesplazaALaPaginaDeDatePicker() {
     theActorInTheSpotlight().wasAbleTo(NavegarDatePicker.navegar());
 }
+
 @When("^selecciona la fecha en Select Date del archivo (.*)$")
 public void seleccionaLaFechaEnSelectDate(String archivo){
-   
-     theActorInTheSpotlight().attemptsTo(SeleccionarFecha.seleccionarFecha(archivo));
-    }
+      theActorInTheSpotlight().attemptsTo(SeleccionarFecha.seleccionarFecha(archivo));    
+}
 
 @Then("^visualiza la fecha seleccionada del archivo (.*)$")
 public void visualizaLaFechaSeleccionada(String archivo){
-
     theActorInTheSpotlight().attemptsTo(ValidarFecha.validarFecha(archivo));
 }
 
@@ -31,9 +30,9 @@ public void visualizaLaFechaSeleccionada(String archivo){
 public void seleccionaLaFechaYHoraEnDateAndTime(DataTable table) {
     theActorInTheSpotlight().attemptsTo(SeleccionarFechaTime.seleccionarFechaTime(table));
 }
+
 @Then("^visualiza la fecha (.*) y hora seleccionada (.*)$")
 public void visualizaLaFechaYHoraSeleccionada(String fecha,String horaMilitar){ 
-
 theActorInTheSpotlight().attemptsTo(ValidarFechaTime.validarFechaTime(fecha,horaMilitar));   
 }
 

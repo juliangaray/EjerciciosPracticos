@@ -21,8 +21,8 @@ private List<List<String>> datos;
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        datos = CsvParser.readCSVFile("src/test/resources/files/"+archivo.toString()+"");
-        for (List<String> row : datos){  
+       datos = CsvParser.readCSVFile("src/test/resources/files/"+archivo.toString()+"");
+       for (List<String> row : datos){  
 
             actor.attemptsTo(  
             Scroll.to(HomePage.SCROLL_TITTLE_PAGE),
