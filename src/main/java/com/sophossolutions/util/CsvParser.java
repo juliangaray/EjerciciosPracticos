@@ -30,7 +30,7 @@ public static List<List<String>> readCSVFile(String filename){
         file = new File(filename);
         fileContents = FileUtils.readFileToString(file, "UTF-8");
         reader = new StringReader(fileContents);
-        format = CSVFormat.EXCEL;
+        format = CSVFormat.DEFAULT.withDelimiter(',').withHeader("").withFirstRecordAsHeader();
         parser = new CSVParser(reader, format);
     
         records = parser.getRecords();
