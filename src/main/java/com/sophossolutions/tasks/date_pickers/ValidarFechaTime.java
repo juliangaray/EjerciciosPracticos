@@ -18,21 +18,24 @@ private String horaNormal;
     this.fecha = fecha;
     this.horaMilitar = horaMilitar;
 }
-    @Override
-    public <T extends Actor> void performAs(T actor) {
-        {  hora=Integer.parseInt(horaMilitar.substring(0,2));
-            if (hora>12) {
-                horaNormal=fecha+" "+Integer.toString(hora-12)+horaMilitar.substring(2,5)+" PM";
-             
-            } else {
-                horaNormal=fecha+" "+Integer.toString(hora)+horaMilitar.substring(2,5)+" AM";
-               
-            }     
-            actor.should(seeThat(FechaTimeTexbox.validarFechaTime(),
-            equalTo(horaNormal)).orComplainWith(GeneralException.class,
-            ErrorMessage.MSG_ERROR));
-        }
-    }
+@Override
+public <T extends Actor> void performAs(T actor) {
+    horaNormal = convertirHoraMilitarAHoraNormal(horaMilitar);
+    actor.should(
+        seeThat(FechaTimeTexbox.validarFechaTime(), equalTo(horaNormal))
+        .orComplainWith(GeneralException.class, ErrorMessage.MSG_ERROR)
+    );
+}
+
+private String convertirHoraMilitarAHoraNormal(String horaMilitar) {
+    hora = Integer.parseInt(horaMilitar.substring(0, 2));
+    
+    if (hora > 12) {
+        return fecha + " " + (hora - 12) + horaMilitar.substring(2, 5) + " PM";
+    } else {
+        return fecha + " " + hora + horaMilitar.substring(2, 5) + " AM";
+    }     
+}
     public static ValidarFechaTime validarFechaTime(String fecha,String horaMilitar) {
         return Tasks.instrumented(ValidarFechaTime.class,fecha,horaMilitar);
     }   

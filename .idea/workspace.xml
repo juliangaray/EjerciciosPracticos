@@ -35,6 +35,9 @@
       </state>
     </system>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -47,7 +50,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/julian.garay/Desktop/Julian Garay/Proyectos/Intellij + serenity BDD + screenplay + cucumber  (8 videos)/ScreenPlayMaven"
+    "last_opened_file_path": "C:/Users/julian.garay/WorkSpaceVSC/EjerciciosPracticos"
   }
 }]]></component>
   <component name="RunManager" selected="Gradle.Alerts">
