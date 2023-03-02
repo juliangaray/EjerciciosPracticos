@@ -1,94 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Yo como analista de automatizacion" tests="11" skipped="0" failures="0" errors="0" timestamp="2023-02-28T21:28:17" hostname="SSBOG5CG1081NY4" time="178.36">
+<testsuite name="Yo como analista de automatizacion" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-03-02T21:22:50" hostname="SSBOG5CG1081NY4" time="11.129">
   <properties/>
-  <testcase name="Interactuar con la alerta &quot;see alert&quot;" classname="Yo como analista de automatizacion" time="15.406"/>
-  <testcase name="Interactuar con la alerta &quot;alert will appear after 5 seconds&quot;" classname="Yo como analista de automatizacion" time="15.624"/>
-  <testcase name="Interactuar con la alerta &quot;confirm box will appear&quot;" classname="Yo como analista de automatizacion" time="11.243"/>
-  <testcase name="Click On button click, prompt box will appear" classname="Yo como analista de automatizacion" time="12.021"/>
-  <testcase name="Seleccionar fecha en &quot;Select Date&quot;" classname="Yo como analista de automatizacion" time="18.54"/>
-  <testcase name="Seleccionar fecha en &quot;Date And Time&quot;" classname="Yo como analista de automatizacion" time="14.907"/>
-  <testcase name="Eliminar un registro a una tabla #1" classname="Yo como analista de automatizacion" time="19.407"/>
-  <testcase name="Eliminar un registro a una tabla #2" classname="Yo como analista de automatizacion" time="13.688"/>
-  <testcase name="Eliminar un registro a una tabla #3" classname="Yo como analista de automatizacion" time="13.813"/>
-  <testcase name="Agregar un nuevo registro a una tabla #1" classname="Yo como analista de automatizacion" time="17.618"/>
-  <testcase name="Agregar un nuevo registro a una tabla #2" classname="Yo como analista de automatizacion" time="17.136"/>
+  <testcase name="Interactuar con la alerta &quot;see alert&quot;" classname="Yo como analista de automatizacion" time="11.129">
+    <failure message="io.cucumber.junit.UndefinedStepException: The step 'se desplaza xxxx a la pagina de alertas' is undefined.&#10;You can implement this step using the snippet(s) below:&#10;&#10;@When(&quot;se desplaza xxxx a la pagina de alertas&quot;)&#10;public void seDesplazaXxxxALaPaginaDeAlertas() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: The step 'se desplaza xxxx a la pagina de alertas' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When(&quot;se desplaza xxxx a la pagina de alertas&quot;)
+public void seDesplazaXxxxALaPaginaDeAlertas() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</failure>
+  </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 15409
+  <system-err><![CDATA[Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 10084
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1677619702.984][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-feb 28, 2023 4:28:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
-Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 21343
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-[1677619714.709][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-feb 28, 2023 4:28:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
-Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 35837
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-[1677619730.470][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-feb 28, 2023 4:28:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
-Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 27437
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-[1677619741.588][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-feb 28, 2023 4:29:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
-Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 46045
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-[1677619767.067][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-feb 28, 2023 4:29:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
-Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 26487
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-[1677619780.908][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-feb 28, 2023 4:29:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
-Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 14024
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-[1677619796.168][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-feb 28, 2023 4:29:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
-Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 23670
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-[1677619815.515][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-feb 28, 2023 4:30:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
-Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 48000
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-[1677619829.074][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-feb 28, 2023 4:30:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
-Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 37620
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-[1677619842.922][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-feb 28, 2023 4:30:42 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
-Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 47434
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-[1677619860.577][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-feb 28, 2023 4:31:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+[1677792175.508][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+mar 02, 2023 4:22:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
 ]]></system-err>
 </testsuite>

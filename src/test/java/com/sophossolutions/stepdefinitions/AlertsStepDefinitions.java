@@ -29,4 +29,5 @@ public void diligenciaNombreEnElTexbox(String button, String name) {
 public void visualizaElTexto(String name) {
     theActorInTheSpotlight().attemptsTo(VisualizarTexto.visualizarTexto(name));
 }
+
 }

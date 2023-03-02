@@ -5,7 +5,7 @@ Feature: Yo como analista de automatizacion
   @1
 Scenario: Interactuar con la alerta "see alert"
     Given Julian ingresa a la Home Page
-    When se desplaza a la pagina de alertas
+    When se desplaza xxxx a la pagina de alertas
     And  da click en el Button alertButton   
 
   @2
